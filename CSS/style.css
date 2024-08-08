@@ -160,6 +160,12 @@ body {
     justify-content: space-between;
 }
 
+/* Ajustes de estilo para o carrossel na seção Home, se necessário */
+.carousel-item img {
+    max-height: 500px; /* Ajustar a altura máxima das imagens */
+    object-fit: cover; /* Garantir que as imagens cubram toda a área disponível */
+}
+
 .home-img {
     width: 100%;
     max-width: 600px;

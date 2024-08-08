@@ -7,14 +7,14 @@
     <!-- Link do Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="CSS/Style.css">
-    <title>Barbearia da bells</title>
+    <title>Alabama Barbeshop</title>
 </head>
 
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#home"><img src="Imagens/Logo/BarbeariaLogo.png" alt="Logo Barbearia" class="img-fluid" width="50"></a>
+                <a class="navbar-brand" href="#home"><img src="Imagens/icons.png" alt="Logo Barbearia" class="img-fluid" width="30"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -50,14 +50,34 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="home-text">
-                            <h1 class="home-title">Bem-vindo à Barbearia da bells</h1>
+                            <h1 class="home-title">Bem-vindo à Barbearia Alabama</h1>
                             <p class="home-paragraph">Cortes Clássicos e Modernos com Excelência</p>
                             <a class="btn btn-outline-light m-2" href="https://chat.inbarberapp.com/?id=745e8a2c-a8fe-4b29-abb8-a27c5caa6fae">Agende Seu Horário</a>
                         </div>
                     </div>
                     <div class="col-lg-6 d-none d-lg-block">
-                        <img class="home-img img-fluid" src="Imagens/Home/Barber.png" alt="Imagem Barbearia">
-                    </div>
+                        <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="home-img img-fluid" src="Imagens/Corte 1.PNG" alt="Imagem Barbearia 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="home-img img-fluid" src="Imagens/Corte 4.PNG" alt="Imagem Barbearia 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="home-img img-fluid" src="Imagens/Corte 3.PNG" alt="Imagem Barbearia 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>                    
                 </div>
             </div>
         </section>
@@ -84,22 +104,22 @@
                 <div class="row g-4">
                     <div class="col-md-4 text-center">
                         <div class="card-servicos p-4 border rounded">
-                            <img src="Imagens/Servicos/Corte.png" alt="Corte de Cabelo" class="img-fluid mb-3">
+                            <img src="Imagens/Corte 4.PNG" alt="Corte de Cabelo" class="img-fluid mb-3">
                             <h3>Corte de Cabelo</h3>
                             <p>Oferecemos uma variedade de cortes, desde os tradicionais até os mais modernos e estilizados.</p>
                         </div>
                     </div>
                     <div class="col-md-4 text-center">
                         <div class="card-servicos p-4 border rounded">
-                            <img src="Imagens/Servicos/Barba.png" alt="Aparar Barba" class="img-fluid mb-3">
-                            <h3>Aparar Barba</h3>
+                            <img src="Imagens/Barba 1.PNG" alt="Barba" class="img-fluid mb-3">
+                            <h3>Barba</h3>
                             <p>Cuide da sua barba com nossos serviços especializados em modelagem e aparo.</p>
                         </div>
                     </div>
                     <div class="col-md-4 text-center">
                         <div class="card-servicos p-4 border rounded">
-                            <img src="Imagens/Servicos/Spa.png" alt="Spa Masculino" class="img-fluid mb-3">
-                            <h3>Spa Masculino</h3>
+                            <img src="Imagens/Spa.png" alt="Combo" class="img-fluid mb-3">
+                            <h3>Combo</h3>
                             <p>Relaxe e renove-se com nossos tratamentos de spa, que incluem limpeza de pele e massagem.</p>
                         </div>
                     </div>
@@ -113,55 +133,52 @@
                 <h2 class="section-title text-center mb-5">Galeria</h2>
                 <div class="row g-4">
                     <div class="col-md-4">
-                        <img src="Imagens/Galeria/Corte1.jpg" alt="Corte 1" class="img-fluid rounded">
+                        <img src="Imagens/Corte 1.PNG" alt="Corte 1" class="img-fluid rounded">
                     </div>
                     <div class="col-md-4">
-                        <img src="Imagens/Galeria/Corte2.jpg" alt="Corte 2" class="img-fluid rounded">
+                        <img src="Imagens/Corte 2.PNG" alt="Corte 2" class="img-fluid rounded">
                     </div>
                     <div class="col-md-4">
-                        <img src="Imagens/Galeria/Corte3.jpg" alt="Corte 3" class="img-fluid rounded">
+                        <img src="Imagens/Corte 3.PNG" alt="Corte 3" class="img-fluid rounded">
                     </div>
                 </div>
             </div>
         </section>
 
  <!-- Adicionar seção de Agendamento -->
-    <section class="s-agendamento py-5 bg-light" id="agendamento">
-        <div class="container text-center">
+ <section class="s-agendamento py-5 bg-light" id="agendamento">
+    <div class="container text-center">
         <h2 class="section-title mb-4">Agende Seu Horário</h2>
         <p>Para agendar um horário conosco, clique no botão abaixo e escolha o melhor horário para você.</p>
-        <a class="btn btn-dark mt-3" href="https://chat.inbarberapp.com/?id=745e8a2c-a8fe-4b29-abb8-a27c5caa6fae" target="_blank">Agendar Agora</a>
-        </div>
-    </section>
+        <a class="btn btn-dark mt-3" href="https://chat.inbarberapp.com/?id=745e8a2c-a8fe-4b29-abb8-a27c5caa6fae">Agendar Agora</a>
+    </div>
+</section>
+
  <!-- Adicionar seção de Contato -->
-        <section class="s-contato py-5 bg-light" id="contato">
-            <div class="container">
-                <h2 class="section-title text-center mb-5">Contato</h2>
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <form action="enviar_email.php" method="POST">
-                            <div class="mb-3">
-                                <label for="nome" class="form-label">Nome</label>
-                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu Nome">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Seu Email">
-                            </div>
-                            <div class="mb-3">
-                                <label for="mensagem" class="form-label">Mensagem</label>
-                                <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Sua Mensagem"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-dark w-100">Enviar</button>
-                        </form>
-                    </div>
+<section class="s-contato py-5 bg-light" id="contato">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Contato</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="d-flex justify-content-center">
+                    <!-- Link para Instagram -->
+                    <a href="https://www.instagram.com/alabamabarbeshop/" target="_blank" class="me-3">
+                        <img src="Imagens/InstagramLogo.png" alt="Instagram" class="img-fluid" width="50">
+                    </a>
+                    <!-- Link para WhatsApp -->
+                    <a href="https://api.whatsapp.com/send?phone=5511981909711" target="_blank">
+                        <img src="Imagens/WhatsAppLogo.png" alt="WhatsApp" class="img-fluid" width="50">
+                    </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
 
         <footer class="footer py-4 bg-dark text-white">
             <div class="container text-center">
-                <p>©2024 Barbearia da bells. Todos os direitos reservados.</p>
+                <p>©2024 Alabama Barbeshop. Todos os direitos reservados.</p>
             </div>
         </footer>
     </main>
