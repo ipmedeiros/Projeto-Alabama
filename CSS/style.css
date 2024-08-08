@@ -57,14 +57,15 @@ body {
     position: relative; 
 }
 
-.list-navbar li::before {
+.list-navbar li::before{
     content: "";
     position: absolute;
     left: 0;
     bottom: -2px;
     width: 100%;
     height: 1px;
-    background: linear-gradient(90deg, var(--color-start) 0%, var(--color-end) 100%);
+    background: rgb(0,124,240);
+    background: linear-gradient(90deg, rgba(0,124,240,1) 0%, rgba(0,223,216,1) 100%);
     border-radius: 2px;
     scale: 0 1;
     transform-origin: left;
@@ -182,11 +183,12 @@ body {
     font-weight: 800;
     letter-spacing: -.04em;
     
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
+    /* Compatibilidade com diferentes navegadores */
+    -webkit-background-clip: text; /* Suporte para navegadores WebKit (Chrome, Safari) */
+    -moz-background-clip: text; /* Suporte para navegadores Firefox */
+    background-clip: text; /* Padrão */
 
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; /* Necessário para o efeito de texto transparente em WebKit */
     background-image: linear-gradient(90deg, var(--color-start), var(--color-end));
 }
 
