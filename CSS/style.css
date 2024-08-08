@@ -28,6 +28,27 @@ body {
     background-color: var(--color-background);
 }
 
+/* Título com gradiente */
+.section-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: -.04em;
+    
+    background-image: linear-gradient(180deg, var(--color-title), var(--color-text));
+    background-size: 100%; /* Garantir que o gradiente seja renderizado */
+    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    /* Fallback para navegadores que não suportam background-clip */
+/* Propriedades de máscara com prefixo para compatibilidade */
+-webkit-mask-image: linear-gradient(180deg, var(--color-title), var(--color-text));
+mask-image: linear-gradient(180deg, var(--color-title), var(--color-text));}
+
 /* -========== Navegação Desktop ==========- */
 .header {
     z-index: 2;
