@@ -78,7 +78,7 @@ mask-image: linear-gradient(180deg, var(--color-title), var(--color-text));}
     position: relative; 
 }
 
-.list-navbar li::before{
+.list-navbar li::before {
     content: "";
     position: absolute;
     left: 0;
@@ -247,6 +247,10 @@ mask-image: linear-gradient(180deg, var(--color-title), var(--color-text));}
     background-color: var(--color-hover);
 }
 
+.button:hover {
+    transform: scale(1.04);
+}
+
 .rede-social a:last-child {
     margin-right: 0;
 }
@@ -286,7 +290,7 @@ mask-image: linear-gradient(180deg, var(--color-title), var(--color-text));}
 }
 
 /* -========== Sobre Mim ==========- */
-.sobre-container {
+.sobre-container, .skills-container {
     height: 100%;
     width: 85%;
     margin: 0 auto;
@@ -302,12 +306,10 @@ mask-image: linear-gradient(180deg, var(--color-title), var(--color-text));}
     font-weight: 800;
     letter-spacing: -.04em;
     background-image: linear-gradient(180deg, var(--color-title), var(--color-text));
-    color: var(--color-title);
-    
+    color: var(--color-title); /* Fallback para navegadores sem suporte */
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-
     -webkit-text-fill-color: transparent;
 }
 
