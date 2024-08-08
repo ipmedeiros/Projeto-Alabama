@@ -43,6 +43,6 @@ Este é um projeto de um website responsivo e moderno para a **Barbearia Alabama
 
 ## Contato
 
-Para mais informações, sugestões ou contribuições, entre em contato através do email: ipmedeirossilva@gmail.com
+Para mais informações, sugestões ou contribuições, entre em contato através do email: <ipmedeirossilva@gmail.com>
 
 ---
