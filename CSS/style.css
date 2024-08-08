@@ -34,20 +34,16 @@ body {
     font-size: 4rem;
     font-weight: 800;
     letter-spacing: -.04em;
-    
     background-image: linear-gradient(180deg, var(--color-title), var(--color-text));
-    background-size: 100%; /* Garantir que o gradiente seja renderizado */
+    color: var(--color-title); /* Fallback para navegadores sem suporte */
     
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
+    /* Compatibilidade com diferentes navegadores */
+    -webkit-background-clip: text; /* Suporte para WebKit (Chrome, Safari) */
+    -moz-background-clip: text; /* Suporte para Firefox (pode não ser necessário, mas para compatibilidade futura) */
+    background-clip: text; /* Padrão */
 
-    -webkit-text-fill-color: transparent;
-
-    /* Fallback para navegadores que não suportam background-clip */
-/* Propriedades de máscara com prefixo para compatibilidade */
--webkit-mask-image: linear-gradient(180deg, var(--color-title), var(--color-text));
-mask-image: linear-gradient(180deg, var(--color-title), var(--color-text));}
+    -webkit-text-fill-color: transparent; /* Suporte para WebKit (Chrome, Safari) */
+}
 
 /* -========== Navegação Desktop ==========- */
 .header {
@@ -289,7 +285,7 @@ mask-image: linear-gradient(180deg, var(--color-title), var(--color-text));}
     }
 }
 
-/* -========== Sobre Mim ==========- */
+/* -========== Sobre ==========- */
 .sobre-container, .skills-container {
     height: 100%;
     width: 85%;
