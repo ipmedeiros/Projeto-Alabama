@@ -1,8 +1,6 @@
-Aqui está o README formatado corretamente para o GitHub:
+# Barbearia Alabama - Website
 
 ---
-
-# Barbearia Alabama - Website
 
 Este é um projeto de um website responsivo e moderno para a **Barbearia Alabama**, desenvolvido utilizando **HTML**, **CSS**, **Bootstrap** e **PHP**. O site possui várias seções, incluindo informações sobre a barbearia, serviços oferecidos, galeria de fotos, e um formulário de contato que envia mensagens diretamente para o email do proprietário.
 
