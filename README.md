@@ -1,12 +1,11 @@
 # Barbearia Alabama - Website
 
-Este é um projeto de um website responsivo e moderno para a **Barbearia Alabama**, desenvolvido utilizando **HTML**, **CSS**, **Bootstrap** e **PHP**. O site possui várias seções, incluindo informações sobre a barbearia, serviços oferecidos, galeria de fotos, e um formulário de contato que envia mensagens diretamente para o email do proprietário.
+Este é um projeto de um website responsivo e moderno para a **Barbearia Alabama**, desenvolvido utilizando **HTML**, **CSS**, **Bootstrap**. O site possui várias seções, incluindo informações sobre a barbearia, serviços oferecidos, galeria de fotos, e um formulário de contato que envia mensagens diretamente para o email do proprietário.
 
 ## Estrutura do Projeto
 
 - **index.html**: Página principal do site contendo todas as seções.
 - **CSS/Style.css**: Arquivo de estilos personalizado para o site.
-- **PHP/contact.php**: Script PHP responsável por processar e enviar as mensagens do formulário de contato via email.
 - **Imagens/**: Pasta contendo todas as imagens usadas no site (logos, fotos de serviços, galeria, etc).
 
 ## Funcionalidades
@@ -32,8 +31,6 @@ Este é um projeto de um website responsivo e moderno para a **Barbearia Alabama
 ## Requisitos
 
 - **Servidor Web**: Para hospedar o site.
-- **PHP 7.2+**: Necessário para o funcionamento do formulário de contato.
-- **Composer**: Para instalar o PHPMailer, se for utilizado para envio de emails.
 
 ## Créditos
 
